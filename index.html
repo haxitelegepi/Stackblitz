@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <link rel="stylesheet" type="text/css" href="styles.css"> -->
+  </head>
+  <body>
+    <h3>Differences between innerText and textContent.</h3>
+
+    <p id="demo">
+      This p element contains a
+      <span style="display: none">hidden span element</span> and a
+      <span>visible span element</span>.
+    </p>
+
+    <button onclick="getTextContent()">Get textContent</button>
+    <button onclick="getInnerText()">Get innerText</button>
+
+    <p>
+      <strong>Note:</strong> The textContent property is not supported in
+      Internet Explorer 8 and earlier, and the innerText property is not
+      supported in IE9 and earlier.
+    </p>
+
+    <script>
+      function getTextContent() {
+        alert(document.getElementById('demo').textContent);
+      }
+
+      function getInnerText() {
+        alert(document.getElementById('demo').innerText);
+      }
+    </script>
+
+    <!-- <button onclick="addList()">Add list</button>
+
+    <script src="script.js"></script> -->
+  </body>
+</html>
